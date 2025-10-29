@@ -3,6 +3,10 @@
 This project implements a simple **CPU architecture** on an FPGA platform using **VHDL**.  
 It covers instruction design, timing cycles, module structure, and verification through simulation and hardware testing.  
 
+This course project was completed during my undergraduate studies in 2013 at Harbin Institute of Technology, as part of the course Computer System Design and Practice (计算机设计与实践).
+
+
+
 ---
 
 ## 📚 Overview
@@ -117,26 +121,6 @@ The `cpu.ucf` file defines FPGA pin mapping for all I/O signals such as:
 - Data bus (`dbus<0–15>`)
 - Control lines (`nrd`, `nwr`, `nmerq`, `nbhe`, `nble`)
 - Debug LEDs (`tout`, `irout`, `reout`, etc.)
-
----
-
-## 🧰 Troubleshooting & Lessons Learned
-
-Common issues encountered during FPGA testing:
-1. **PC value updates twice per cycle** — fixed by moving `PC + 1` logic into the writeback stage  
-2. **Carry flag not updated correctly** — separated arithmetic and flag update into different clock phases  
-3. **One-cycle delay in ALU output** — resolved by expanding process sensitivity lists  
-4. **Register writeback timing issue** — corrected by generating write address directly from IR within ALU  
-
-Through iterative debugging, a deeper understanding of **CPU datapath design**, **timing synchronization**, and **VHDL hardware description** was achieved.
-
----
-
-## 🧑‍💻 Author
-
-**Tuo Shi (石拓)**  
-Class: 1103105  
-Student ID: 1110310504  
 
 ---
 
