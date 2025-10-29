@@ -1,4 +1,4 @@
-# 🧠 CPU Design and Implementation (VHDL, FPGA)
+# CPU Design and Implementation (VHDL, FPGA)
 
 This project implements a simple **CPU architecture** on an FPGA platform using **VHDL**.  
 It covers instruction design, timing cycles, module structure, and verification through simulation and hardware testing.  
@@ -9,7 +9,7 @@ This course project was completed during my undergraduate studies in 2013 at Har
 
 ---
 
-## 📚 Overview
+## Overview
 
 **Goal:**  
 To design and implement a basic CPU that supports arithmetic, logic, and control instructions, with all core components written in VHDL and synthesized using **Xilinx ISE**.
@@ -21,7 +21,7 @@ To design and implement a basic CPU that supports arithmetic, logic, and control
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Master the **Xilinx ISE** and **ModelSim** toolchains  
 - Learn and apply **VHDL programming**  
@@ -31,7 +31,7 @@ To design and implement a basic CPU that supports arithmetic, logic, and control
 
 ---
 
-## ⚙️ CPU Architecture
+## CPU Architecture
 
 ### Core Modules
 
@@ -47,7 +47,7 @@ To design and implement a basic CPU that supports arithmetic, logic, and control
 
 ---
 
-## 🧩 Instruction Design
+## Instruction Design
 
 ### Instruction Format
 
@@ -78,7 +78,7 @@ Multiple formats are supported to handle:
 
 ---
 
-## ⏱️ Timing Cycles
+## Timing Cycles
 
 | Cycle | Operation |
 |-------|------------|
@@ -101,7 +101,7 @@ Simulation is performed for all modules using **ModelSim**:
 
 ---
 
-## 🧠 Example Instruction Sequence
+## Example Instruction Sequence
 
 | Instruction | Machine Code | Description |
 |--------------|--------------|--------------|
@@ -114,7 +114,7 @@ Simulation is performed for all modules using **ModelSim**:
 
 ---
 
-## 🧮 UCF (Pin Constraints)
+## UCF (Pin Constraints)
 
 The `cpu.ucf` file defines FPGA pin mapping for all I/O signals such as:
 - Address bus (`abus<0–15>`)
